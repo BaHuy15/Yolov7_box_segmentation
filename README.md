@@ -4,7 +4,9 @@
 In this project, we applied yolov7 to localize bounding box of blisters and classify them to see whether or not they are on hand. To illustrate this, see figure below.
 <div align="center">
     <a href="./">
-        <img alt="figure 1" src="./figure/project_image.jpg" width="100%"/>
+        <img alt="figure 1" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image.png" width="100%"/>
+        <img alt="figure 1" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image_fig.png" width="100%"/>
+
     </a>
 </div>
 
@@ -163,17 +165,11 @@ Yolov7_box_segmentation
     |                       |        |_________.json 
     |                       |                      
     |                       |_______Val   # Test image                           
-    |                       |        |                                        
-    |                       |        |_________.bmg
-    |                       |        |
-    |                       |        |_________.json                     
-    |      
-    |                           
-    |                        
-    |                         
-    |                                       
-    |
-    |         
+    |                                |                                        
+    |                                |_________.bmg
+    |                                |
+    |                                |_________.json                     
+    |             
     |
     |______command                    
     |        |                                        
@@ -199,8 +195,8 @@ Yolov7_box_segmentation
             |       |        |                       
             |       |        |_______get_imagenet.sh
             |       |                                             
-    |       |       |
-    |       |       |_______coco.yaml               
+            |       |
+            |       |_______coco.yaml               
             |                   
             |
             |______models                                         
@@ -224,7 +220,7 @@ Yolov7_box_segmentation
             |______yolov5m-seg.pt   # Test                   
             |
             |______yolov5s-seg.pt # Train         
-            |
+
 
 ```                                             
 
@@ -240,10 +236,6 @@ Yolov7_box_segmentation
 #If inference grayscale
 python inference_blisters.py --gray_scale --weights /home/tonyhuy/yolov7/runs/train/yolov749/weights/last.pt --image_size 640  --device '2' --path /home/tonyhuy/yolov7_blister/blister_data/crop_img --conf_thresh 0.5 --batch_size 60  --class_name /home/tonyhuy/yolov7_blister/data/blister.yaml
 #If you use inference_blisters.py file to infer video, set --batch_size 1 and add argument --run_video
-
-
-#If not
-python inference_blisters.py  --weights /home/tonyhuy/yolov7/runs/train/yolov749/weights/last.pt --image_size 640  --device '2' --path /home/tonyhuy/yolov7_blister/blister_data/crop_img --conf_thresh 0.5 --batch_size 60  --class_name /home/tonyhuy/yolov7_blister/data/blister.yaml
 
 #Detect code
 python detect.py --weights /home/tonyhuy/yolov7/runs/train/yolov725/weights/last.pt --device 1 --conf 0.3 --iou-thres 0.4 --img-size 320 --source /home/tonyhuy/yolov7/blister_data/images/test
@@ -269,8 +261,6 @@ Run this script to generate augmented images.
 # If save augmented data,use this command
 python hand_augment.py  --path /home/tonyhuy/yolov7_blister/blister_data/images/test/ --save --save_dir /home/tonyhuy/yolov7_blister/augmented_data --augment_yaml data/augment_list.yaml 
 
-# If not save augmented data, use this command
-python hand_augment.py  --path /home/tonyhuy/yolov7_blister/blister_data/images/test/ --save_dir /home/tonyhuy/yolov7_blister/augmented_data --augment_yaml data/augment_list.yaml 
 
 ```
 
