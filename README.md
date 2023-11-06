@@ -161,7 +161,6 @@ python3 -m venv venv_yolo
 # Activate virtual environment
 source path/to/ven_yolo/bin/activate      
 
-
 ``` 
 
 </details> 
@@ -249,6 +248,22 @@ Yolov7_box_segmentation
 
 </details>  
 
+## Add segment data to background
+
+<details><summary> <b>Expand</b> </summary> 
+
+``` shell 
+
+# Convert polygon read from json file to mask png/jpg file                             
+python3 cvtpoly2_mask.py # (this code will save mask in folder ./result_mask) (1)                 
+           
+# Read background image and mask.jpg created from script (1) to replace background                
+python3 replace_background.py # (this script will replace image with background) (2)                     
+                            
+# Read background image and mask.jpg created from script (1) to replace background
+python3 convert_data.py # (this script will convert images, label, masks to coco format to train) (3)                               
+
+``` 
 
 ## Download Yolov7 Weights                                                        
 [`yolov7.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt) [`yolov7x.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7x.pt) [`yolov7-w6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt) [`yolov7-e6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6.pt) [`yolov7-d6.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-d6.pt) [`yolov7-e6e.pt`](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-e6e.pt)           
