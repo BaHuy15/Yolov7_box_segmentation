@@ -22,7 +22,7 @@ In this project, we applied yolov7 to localize bounding box of boxes and segment
 
 - [Table of Contents](#table-of-contents)
 - [Install Requirements](#Install-Requirements)
-- [Create virtual environment](#Create-virtual-environment)
+- [Create and activate virtual environment](#Create-and-activate-virtual-environment)
 - [Data Format](#Data-Format)
 - [Generate auto-augmented data](#Generate-augmentation-data)
 - [Download Yolov7 Weights](#Download-Yolov7-Weights)
@@ -152,9 +152,18 @@ In this project, we applied yolov7 to localize bounding box of boxes and segment
 
 ## Create virtual environment
 <details><summary> <b>Expand</b> </summary> 
+
 ``` shell 
-  python3 -m venv venv_yolo
-```
+
+# Create virtual environment
+python3 -m venv venv_yolo                   
+
+# Activate virtual environment
+source path/to/ven_yolo/bin/activate      
+
+
+``` 
+
 </details> 
 
 ## Data Format
