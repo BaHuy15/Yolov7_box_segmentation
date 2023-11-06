@@ -1,7 +1,7 @@
 # Yolov7_box_segmentation
 # Detect blister status using YOLOv7
 
-In this project, we applied yolov7 to localize bounding box of blisters and classify them to see whether or not they are on hand. To illustrate this, see figure below.
+In this project, we applied yolov7 to localize bounding box of boxes and segment them. To illustrate this, see figure below.
 <div align="center">
     <a href="./">
         <img alt="figure 1: Detect box location and segment them" src="./Figure/image.png" width="100%"/>
