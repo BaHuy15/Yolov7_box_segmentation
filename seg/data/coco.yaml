@@ -1,0 +1,5 @@
+path: /home/tonyhuy/Yolov7_box_segmentation/Box_data/Filling_2023_05_16
+train: images/train
+val: images/val
+names:
+- box

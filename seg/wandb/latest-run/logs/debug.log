@@ -1,0 +1,27 @@
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Configure stats pid to 922
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Loading settings from /home/tonyhuy/.config/wandb/settings
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Loading settings from /home/tonyhuy/Yolov7_box_segmentation/seg/wandb/settings
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'seg/segment/train.py', 'program': 'segment/train.py'}
+2023-11-06 15:28:33,779 INFO    MainThread:922 [wandb_setup.py:_flush():76] Applying login settings: {'login_timeout': 30}
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:_log_setup():507] Logging user logs to /home/tonyhuy/Yolov7_box_segmentation/seg/wandb/run-20231106_152833-lbpu0kl8/logs/debug.log
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:_log_setup():508] Logging internal logs to /home/tonyhuy/Yolov7_box_segmentation/seg/wandb/run-20231106_152833-lbpu0kl8/logs/debug-internal.log
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:init():547] calling init triggers
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:init():555] wandb.init called with sweep_config: {}
+config: {'weights': '/home/tonyhuy/Yolov7_box_segmentation/seg/yolov5s-seg.pt', 'cfg': '', 'data': '/home/tonyhuy/Yolov7_box_segmentation/seg/data/coco.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.1, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.3, 'cls_pw': 1.0, 'obj': 0.7, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.9, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.1, 'copy_paste': 0.0}, 'epochs': 300, 'batch_size': 16, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '1', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 8, 'project': 'runs/train-seg', 'name': 'exp', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 30, 'freeze': [0], 'save_period': -1, 'seed': 0, 'local_rank': -1, 'mask_ratio': 4, 'no_overlap': False, 'save_dir': 'runs/train-seg/exp5'}
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:init():595] starting backend
+2023-11-06 15:28:33,780 INFO    MainThread:922 [wandb_init.py:init():599] setting up manager
+2023-11-06 15:28:33,783 INFO    MainThread:922 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-11-06 15:28:33,786 INFO    MainThread:922 [wandb_init.py:init():605] backend started and connected
+2023-11-06 15:28:33,788 INFO    MainThread:922 [wandb_init.py:init():695] updated telemetry
+2023-11-06 15:28:33,821 INFO    MainThread:922 [wandb_init.py:init():732] communicating run to backend with 60.0 second timeout
+2023-11-06 15:28:34,460 INFO    MainThread:922 [wandb_run.py:_on_init():2176] communicating current version
+2023-11-06 15:28:34,652 INFO    MainThread:922 [wandb_run.py:_on_init():2185] got version response upgrade_message: "wandb version 0.15.12 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-11-06 15:28:34,652 INFO    MainThread:922 [wandb_init.py:init():782] starting run threads in backend
+2023-11-06 15:28:34,823 INFO    MainThread:922 [wandb_run.py:_console_start():2157] atexit reg
+2023-11-06 15:28:34,823 INFO    MainThread:922 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-11-06 15:28:34,824 INFO    MainThread:922 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-11-06 15:28:34,824 INFO    MainThread:922 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-11-06 15:28:34,826 INFO    MainThread:922 [wandb_init.py:init():824] run started, returning control to user process
+2023-11-06 15:57:15,937 WARNING MsgRouterThr:922 [router.py:message_loop():77] message_loop has been closed
