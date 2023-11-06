@@ -10,7 +10,7 @@ In this project, we applied yolov7 to localize bounding box of blisters and clas
 </div>
 
 <div align="center">
-    <a href="../">
+    <a href="./">
         <img alt="figure 2: Original image"src="./Figure/image_fig.png" width="100%"/>
     </a>
 
@@ -22,6 +22,7 @@ In this project, we applied yolov7 to localize bounding box of blisters and clas
 
 - [Table of Contents](#table-of-contents)
 - [Install Requirements](#Install-Requirements)
+- [Create virtual environment](#Create-virtual-environment)
 - [Data Format](#Data-Format)
 - [Generate auto-augmented data](#Generate-augmentation-data)
 - [Download Yolov7 Weights](#Download-Yolov7-Weights)
@@ -149,7 +150,11 @@ In this project, we applied yolov7 to localize bounding box of blisters and clas
    
 </details>  
 
-
+## Create virtual environment
+<details><summary> <b>Expand</b> </summary> 
+``` shell python3 -m venv venv_yolo
+```
+</details> 
 
 ## Data Format
 <details><summary> <b>Expand</b> </summary> 
