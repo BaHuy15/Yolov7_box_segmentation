@@ -10,7 +10,7 @@ In this project, we applied yolov7 to localize bounding box of blisters and clas
 </div>
 
 <div align="center">
-    <a href="./">
+    <a href="../">
         <img alt="figure 2: Original image"src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image_fig.png" width="100%"/>
     </a>
 
