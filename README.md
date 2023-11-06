@@ -4,8 +4,8 @@
 In this project, we applied yolov7 to localize bounding box of blisters and classify them to see whether or not they are on hand. To illustrate this, see figure below.
 <div align="center">
     <a href="./">
-        <img alt="figure 1" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image.png" width="100%"/>
-        <img alt="figure 1" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image_fig.png" width="100%"/>
+        <img alt="figure 1: Detect box location and segment them" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image.png" width="100%"/>
+        <img alt="figure 2: Original image" src="/home/tonyhuy/Yolov7_box_segmentation/Figure/image_fig.png" width="100%"/>
 
     </a>
 </div>
