@@ -152,7 +152,8 @@ In this project, we applied yolov7 to localize bounding box of boxes and segment
 
 ## Create virtual environment
 <details><summary> <b>Expand</b> </summary> 
-``` shell python3 -m venv venv_yolo
+``` shell 
+  python3 -m venv venv_yolo
 ```
 </details> 
 
