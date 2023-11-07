@@ -10,7 +10,8 @@ def convert_to_yolo_data(images_folder, masks_folder, output_folder):
     
     for image_file in image_files:
         image_path = os.path.join(images_folder, image_file)
-        mask_path = os.path.join(masks_folder, image_file.replace('.jpg', '.png'))  # Điều chỉnh phần mở rộng tệp mask
+        mask_path = os.path.join(masks_folder, image_file.replace('image', 'mask'))  # Điều chỉnh phần mở rộng tệp mask
+
         
         image = cv2.imread(image_path)
         mask = cv2.imread(mask_path, cv2.IMREAD_GRAYSCALE)
@@ -34,8 +35,8 @@ def convert_to_yolo_data(images_folder, masks_folder, output_folder):
                 # write information to file
                 label_f.write(f"{0} {x_center} {y_center} {width} {height}\n")
 
-images_folder = '/home/jay2/TOMO_new/dataset/prepare_for_detection/imgs'
-masks_folder = '/home/jay2/TOMO_new/dataset/prepare_for_detection/masks'
-output_folder = '/home/jay2/TOMO_new/dataset/detection_data'
+images_folder = '/home/tonyhuy/Yolov7_box_segmentation/result_mask/change_bg/images'
+masks_folder = '/home/tonyhuy/Yolov7_box_segmentation/result_mask/change_bg/masks'
+output_folder = '/home/tonyhuy/Yolov7_box_segmentation/result_mask/convert2yolo'
 
 convert_to_yolo_data(images_folder, masks_folder, output_folder)
