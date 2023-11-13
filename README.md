@@ -2,12 +2,6 @@
 # Detect box location using YOLOv7
 
 In this project, we applied yolov7 to localize bounding box of boxes and segment them. To illustrate this, see figure below.
-<div align="center">
-    <a href="./">
-        <img alt="figure 1: Detect box location and segment them" src="./Figure/image.png" width="100%"/>
-    </a>
-
-</div>
 
 <div align="center">
     <a href="./">
@@ -317,13 +311,18 @@ python3 segment/train.py
 
 ```
 
-## Result                                                      
-[Weights and Bias running result](https://wandb.ai/huynguyen15/YOLOR/runs/6cj3l4xu?workspace=user-huynguyen15)  
+## Result  
+
+WANDB                                                                       
+[Weights and Bias running result](https://wandb.ai/huynguyen15/YOLOR/runs/6cj3l4xu?workspace=user-huynguyen15)
+
+Prediction result                    
 
 <div align="center">
     <a href="./">
-        <img src="./figure/img.png" width="100%"/>
+        <img alt="figure 1: Detect box location and segment them" src="./Figure/image.png" width="100%"/>
     </a>
+
 </div>
 
 ## Citation
