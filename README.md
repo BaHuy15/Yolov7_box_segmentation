@@ -242,12 +242,11 @@ Yolov7_box_segmentation
             |
             |______yolov5s-seg.pt # Train         
 
-
 ```                                             
 
 </details>  
 
-## Add segment data to background
+## Add more aug data for training
 
 <details><summary> <b>Expand</b> </summary> 
 
@@ -297,7 +296,7 @@ After running inference_blister.py,the results will be saved here:
 Run this script to generate augmented images.
 ``` shell
 # If save augmented data,use this command
-python hand_augment.py  --path /home/tonyhuy/yolov7_blister/blister_data/images/test/ --save --save_dir /home/tonyhuy/yolov7_blister/augmented_data --augment_yaml data/augment_list.yaml 
+
 
 
 ```
