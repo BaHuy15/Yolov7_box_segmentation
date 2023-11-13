@@ -1,5 +1,5 @@
 # Yolov7_box_segmentation
-# Detect blister status using YOLOv7
+# Detect box location using YOLOv7
 
 In this project, we applied yolov7 to localize bounding box of boxes and segment them. To illustrate this, see figure below.
 <div align="center">
@@ -16,7 +16,6 @@ In this project, we applied yolov7 to localize bounding box of boxes and segment
 
 </div>
 
-   
 
 ## Table of Contents
 
