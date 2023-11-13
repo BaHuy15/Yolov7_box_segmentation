@@ -269,7 +269,7 @@ python3 convert_data.py # (this script will convert images, label, masks to coco
 
 ## Evaluation   
 ``` shell
-   
+# Infer boxes and their segments
 python3 seg/segment/predict.py  
 --weights=/home/tonyhuy/Yolov7_box_segmentation/seg/runs/train-seg/exp5/weights/epoch_111_best.pt         
 --source=/home/tonyhuy/Yolov7_box_segmentation/Box_data/bad            
