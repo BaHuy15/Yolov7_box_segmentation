@@ -279,7 +279,6 @@ python3 seg/segment/predict.py
 --device=2                     
 
 ```
-
 <div align="center">
     <a href="./">
         <img alt="figure 1" src="./Figure/predict_folder.png" width="70%"/>
@@ -292,7 +291,6 @@ Run this script to generate augmented images.
 # If save augmented data,use this command
 
 
-
 ```
 
 ## Training
@@ -300,10 +298,23 @@ Run this script to generate augmented images.
 ``` shell
 #____________________________________________ Run training file___________________________________________________#
 # Image size 320
-python train.py --workers 8 --device 3  --batch-size 8 --data data/blister.yaml --img 320  --cfg cfg/training/yolov7.yaml --weights 'yolov7.pt' --name yolov7 --hyp data/hyp.scratch.p5.yaml
+python3 segment/train.py                    
+--weights=/home/tonyhuy/Yolov7_box_segmentation/seg/yolov5s-seg.pt                            
+--data=/home/tonyhuy/Yolov7_box_segmentation/seg/data/coco.yaml             
+--hyp=/home/tonyhuy/Yolov7_box_segmentation/seg/data/hyps/experiment.yaml                  
+--epochs=300                                  
+--img=320      
+--device=1           
 
 # Image size 640
-python train.py --workers 8 --device 1  --batch-size 8 --data data/blister.yaml --img 640  --cfg cfg/training/yolov7.yaml --weights 'yolov7.pt' --name yolov7 --hyp data/hyp.scratch.p5.yaml
+python3 segment/train.py          
+--weights=/home/tonyhuy/Yolov7_box_segmentation/seg/yolov5s-seg.pt             
+--data=/home/tonyhuy/Yolov7_box_segmentation/seg/data/coco.yaml               
+--hyp=/home/tonyhuy/Yolov7_box_segmentation/seg/data/hyps/experiment.yaml           
+--epochs=300        
+--img=640               
+--device=1                   
+
 ```
 
 ## Result                                                      
