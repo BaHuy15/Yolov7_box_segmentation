@@ -269,19 +269,14 @@ python3 convert_data.py # (this script will convert images, label, masks to coco
 
 ## Evaluation   
 ``` shell
-# python test.py --data data/coco.yaml --img 640 --batch 32 --conf 0.001 --iou 0.65 --device 0 --weights yolov7.pt --name yolov7_640_val
-#If inference grayscale
-python inference_blisters.py --gray_scale --weights /home/tonyhuy/yolov7/runs/train/yolov749/weights/last.pt --image_size 640  --device '2' --path /home/tonyhuy/yolov7_blister/blister_data/crop_img --conf_thresh 0.5 --batch_size 60  --class_name /home/tonyhuy/yolov7_blister/data/blister.yaml
-#If you use inference_blisters.py file to infer video, set --batch_size 1 and add argument --run_video
-
-#Detect code
-python detect.py --weights /home/tonyhuy/yolov7/runs/train/yolov725/weights/last.pt --device 1 --conf 0.3 --iou-thres 0.4 --img-size 320 --source /home/tonyhuy/yolov7/blister_data/images/test
-
-#Run prediction for augmented data(grayscale image)
-python yolov7_pred.py --weights /home/tonyhuy/yolov7/runs/train/yolov749/weights/last.pt --gray_scale --device 1 --conf 0.3 --iou-thres 0.4 --img-size 640 --source /home/tonyhuy/yolov7_blister/augmented_data
-
-#Run prediction for augmented data(RGB image)
-python yolov7_pred.py --weights /home/tonyhuy/yolov7/runs/train/yolov749/weights/last.pt --device 1 --conf 0.3 --iou-thres 0.4 --img-size 640 --source /home/tonyhuy/yolov7_blister/augmented_data
+   
+python3 seg/segment/predict.py  
+--weights=/home/tonyhuy/Yolov7_box_segmentation/seg/runs/train-seg/exp5/weights/epoch_111_best.pt         
+--source=/home/tonyhuy/Yolov7_box_segmentation/Box_data/bad            
+--data=/home/tonyhuy/Yolov7_box_segmentation/seg/data/coco.yaml                               
+--imgsz=320                
+--conf-thres=0.8                 
+--device=2                     
 
 ```
 After running inference_blister.py,the results will be saved here:
