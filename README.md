@@ -279,11 +279,10 @@ python3 seg/segment/predict.py
 --device=2                     
 
 ```
-After running inference_blister.py,the results will be saved here:
 
 <div align="center">
     <a href="./">
-        <img alt="figure 1" src="./figure/result.jpg" width="70%"/>
+        <img alt="figure 1" src="./Figure/predict_folder.png" width="70%"/>
     </a>
 </div>
 
